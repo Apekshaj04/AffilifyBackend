@@ -20,7 +20,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000",
-                  "https://affilfiy-frontend.vercel.app/"],
+                  "http://3.85.201.122:3000/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
