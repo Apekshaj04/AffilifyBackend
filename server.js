@@ -17,7 +17,7 @@ app.get("/test",async(req,res)=>{
 })
 // ✅ Fix: Explicitly define CORS settings
 app.use(cors({
-    origin: 'http://localhost:3000',  // Allow requests from frontend
+    origin: 'https://affilfiy-frontend.vercel.app',  // Allow requests from frontend
     methods: 'GET, POST, PUT, DELETE',
     allowedHeaders: 'Content-Type, Authorization',
     credentials: true 
