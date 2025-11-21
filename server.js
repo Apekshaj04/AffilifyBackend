@@ -17,7 +17,7 @@ app.get("/test",async(req,res)=>{
 })
 // ✅ Fix: Explicitly define CORS settings
 app.use(cors({
-    origin: 'http://34.201.149.229:3000/',  // Allow requests from frontend
+    origin: 'http://34.201.149.229:3000',  // Allow requests from frontend
     methods: 'GET, POST, PUT, DELETE',
     allowedHeaders: 'Content-Type, Authorization',
     credentials: true 
